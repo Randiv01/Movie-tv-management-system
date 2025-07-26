@@ -1,0 +1,127 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Images/privacy.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Privacy Hero Section */
+.privacy-hero {
+    position: relative;
+    background-color: rgba(44, 62, 80, 0.7); /* Adjust opacity for better image visibility */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+}
+
+.privacy-hero .overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.privacy-hero p {
+    font-size: 1.4rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+/* Privacy Content */
+.privacy-content {
+    padding: 50px 20px;
+    background-color: rgba(244, 244, 244, 0.95); /* Slight transparency */
+}
+
+.privacy-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header */
+h2 {
+    color: #ff5733; /* Main theme color */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Privacy Info Boxes */
+.privacy-info {
+    background-color: #fff2e6; /* Light background for sections */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.privacy-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.privacy-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.privacy-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.privacy-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.privacy-info i {
+    font-size: 2rem;
+    color: #ff5733;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #d14320;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}

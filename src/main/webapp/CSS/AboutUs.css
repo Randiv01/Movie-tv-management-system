@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Images/aboutaswall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Section */
+.about-header {
+    position: relative;
+    text-align: center;
+    padding:50px 0;
+    color: white;
+}
+
+.about-header .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.about-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about-header p {
+    font-size: 1.3em;
+}
+
+/* Main Container */
+.about-container {
+    max-width: 1200px;
+    margin: 5px auto; /* Reduced the top margin from 50px to 20px */
+    margin-bottom: 70px; 
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+}
+
+/* Section Titles */
+h2 {
+    color: #ff5733;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.offer-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.offer-item {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item i {
+    font-size: 2.5em;
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+.offer-item h3 {
+    font-size: 1.3em;
+    color: #007BFF;
+}
+
+/* Leadership Section */
+.leaderboard-section {
+    margin: 50px 0;
+}
+
+.leaderboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.leader-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leader-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leader-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff5733;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Mission Section */
+.mission-section {
+    margin: 50px 0;
+}
+
+.mission-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Values Section */
+.values-section {
+    margin: 50px 0;
+}
+
+.values-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.values-section li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 87, 51, 0.1);
+    border-left: 5px solid #ff5733;
+    border-radius: 8px;
+    display: inline-block;
+    width: 80%;
+}
+
+.values-section i {
+    color: #ff5733;
+    margin-right: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.testimonial-box {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.testimonial-box p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.testimonial-box h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .offer-cards, .leaderboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-item, .leader-item {
+        width: 80%;
+    }
+
+    .about-header h1 {
+        font-size: 2.5em;
+    }
+
+    .about-header p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .values-section li {
+        width: 100%;
+    }
+
+    .testimonial-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .about-header h1 {
+        font-size: 2em;
+    }
+}

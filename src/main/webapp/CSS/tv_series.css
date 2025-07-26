@@ -1,0 +1,164 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* A more modern and clean font */
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff5733;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Search & Filter Section */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    width: 200px;
+    border-radius: 25px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border: 2px solid #ff5733;
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
+}
+
+button, .clear-filters {
+    padding: 12px 24px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover, .clear-filters:hover {
+    background: #e14d28;
+}
+
+.clear-filters {
+    background: #444;
+    font-size: 14px;
+}
+
+/* Movie Grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.movie-card {
+    background: #222;
+    border-radius: 15px;
+    padding: 2px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 380px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.movie-card:hover img {
+    transform: scale(1.05);
+}
+
+.movie-card h2 {
+    color: #ff5733;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.movie-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.movie-card a:hover {
+    background: #e14d28;
+}
+.movie-card a.trailer-link {
+    background-color: #e14d28;
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.movie-card a.trailer-link:hover {
+    background: #e14d28;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+    }
+}

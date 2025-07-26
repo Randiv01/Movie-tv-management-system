@@ -1,0 +1,126 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('../Images/mercenarywall.jpg') no-repeat center center/cover;
+    height: 130vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Adds a dark overlay for readability */
+}
+
+/* Login Box */
+.login-box {
+    background: rgba(26, 26, 26, 0.9); /* Dark theme */
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+h1 {
+    color: #fff; /* MovieHub-themed orange */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #ccc;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Password Visibility Toggle */
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+    color: #ff5733;
+}
+
+/* Forgot Password & Sign Up */
+.forgot-signup {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.forgot-signup a {
+    color: #ff5733;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.forgot-signup a:hover {
+    color: #d14320;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff5733;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background: #d14320;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+    }
+}

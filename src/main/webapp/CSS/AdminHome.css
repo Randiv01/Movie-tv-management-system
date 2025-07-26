@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 40px 20px;
+}
+
+.welcome-section h1 {
+    font-size: 32px; /* Slightly larger font size for a stronger welcome */
+    color: #ff5733; /* Warm orange color */
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.welcome-section p {
+    font-size: 20px; /* Slightly larger font for better readability */
+    margin-top: 10px;
+    color:white; /* Dark gray text for contrast */
+    line-height: 1.6; /* Increased line height for better spacing between lines */
+}
+
+.welcome-section img {
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Admin Actions Section */
+.admin-actions {
+    padding: 20px;
+}
+
+.admin-actions h2 {
+    font-size: 24px;
+    color: #ff5733;
+    margin-bottom: 20px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #292929;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* Button Colors */
+.manage-users { background: #007bff; }
+.manage-movies { background: #28a745; }
+.manage-tv { background: #17a2b8; }
+.manage-messages { background: #ffc107; color: black; }
+.manage-admins { background: #dc3545; }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}

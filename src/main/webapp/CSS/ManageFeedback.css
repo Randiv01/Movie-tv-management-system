@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 80px;
+    margin: 0;
+}
+
+/* Main Container */
+.admin-feedback-management {
+    max-width: 1700px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+/* Title Styling */
+.admin-feedback-management h2,
+.admin-feedback-management h3 {
+    text-align: center;
+    color: #ff5733;
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 10px;
+}
+
+/* Table Styling */
+.admin-feedback-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-feedback-management table th,
+.admin-feedback-management table td {
+    padding: 14px 16px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.admin-feedback-management table th {
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.admin-feedback-management table td {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+    color: #f0f0f0;
+    font-size: 14px;
+}
+
+.admin-feedback-management table tr:nth-child(even) td {
+    background-color: #2b2b2b;
+}
+
+/* Input Styling */
+.admin-feedback-management input[type="text"],
+.admin-feedback-management input[type="email"],
+.admin-feedback-management select,
+.admin-feedback-management textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+/* Wider Email Column */
+.admin-feedback-management .wide-email {
+    width: 180px;
+}
+
+/* Datetime Field */
+.datetime {
+    font-weight: normal;
+    color: #ccc;
+    font-size: 13px;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Attachment Box */
+.attachment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.attachment-box input[type="file"] {
+    font-size: 11px;
+    padding: 2px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+/* Links */
+.admin-feedback-management a {
+    color: #ffa366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-feedback-management a:hover {
+    text-decoration: underline;
+}
+
+/* Action Buttons */
+.admin-feedback-management .action-btn {
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-feedback-management .edit-btn {
+    background-color: #ffa366;
+    color: black;
+}
+
+.admin-feedback-management .edit-btn:hover {
+    background-color: #e68c42;
+}
+
+.admin-feedback-management .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.admin-feedback-management .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.admin-feedback-management .action-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .admin-feedback-management table {
+        width: 100%;
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .admin-feedback-management table td,
+    .admin-feedback-management table th {
+        padding: 8px;
+    }
+}
+
+/* Icons (Optional if used) */
+.admin-feedback-management i {
+    margin-right: 6px;
+    color: #ff5733;
+}

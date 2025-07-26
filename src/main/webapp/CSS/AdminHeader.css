@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo a.text-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo a.text-logo i {
+    font-size: 1.5em;
+    color: #ff5733;
+}
+
+.logo .logo-text .highlight {
+    color: #ff5733;
+}
+
+/* Navigation Centered */
+.nav-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff5733;
+}
+
+/* Auth Section - Aligned in One Line */
+.auth-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.welcome-message {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.profile-logo {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.profile-logo:hover {
+    color: #ff5733;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.btn-logout {
+    background: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background: #e64a19;
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .auth-section {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logout-form {
+        width: 100%;
+        text-align: right;
+    }
+}

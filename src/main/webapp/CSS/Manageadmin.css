@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* Base styles */
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Container */
+.ma-container {
+    max-width: 1300px;
+    margin: 60px auto;
+    background-color: #1e1e1e;
+    padding: 40px;
+
+}
+
+/* Section Title */
+.ma-title {
+    font-size: 32px;
+    color: #ff5733;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff5733;
+    letter-spacing: 1px;
+}
+
+/* Form Layout */
+.ma-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Rows for grouped inputs */
+.ma-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Form Group (input + label) */
+.ma-form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ma-form-group.full-width {
+    flex: 1 1 100%;
+}
+
+/* Labels */
+.ma-form-group label {
+    font-size: 15px;
+    color: #ffa366;
+    font-weight: 500;
+}
+
+/* Inputs, Selects, Textareas */
+.ma-form-group input,
+.ma-form-group select,
+.ma-form-group textarea {
+    padding: 12px 14px;
+    background-color: #292929;
+    color: #f0f0f0;
+    border: 1px solid #3c3c3c;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.ma-form-group input:focus,
+.ma-form-group select:focus,
+.ma-form-group textarea:focus {
+    border-color: #ff5733;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+
+/* Submit Button */
+.ma-form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ma-form-actions button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.ma-form-actions button:hover {
+    background-color: #e6492d;
+    transform: scale(1.03);
+}
+
+.ma-form-actions i {
+    margin-right: 8px;
+}
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    padding-top: 80px; /* Increased top padding for more space */
+}
+
+/* Scoped Styling for Admin User Management */
+.admin-user-management {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Title Styling */
+.admin-user-management h2, 
+.admin-user-management h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Design */
+.admin-user-management table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+}
+
+/* Table Header */
+.admin-user-management table th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ff5733; /* Orange background */
+    color: white;
+}
+
+/* Table Body */
+.admin-user-management table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Adjust specific columns for better readability */
+.admin-user-management table td:nth-child(2),
+.admin-user-management table th:nth-child(2) {
+    max-width: 120px;
+}
+
+.admin-user-management table td:nth-child(3),
+.admin-user-management table th:nth-child(3) {
+    max-width: 200px;
+}
+
+.admin-user-management table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-user-management table tr:hover {
+    background-color: #e9e9e9; /* Highlight row on hover */
+}
+
+/* Input Fields Styling */
+.admin-user-management input[type="text"],
+.admin-user-management input[type="email"],
+.admin-user-management input[type="date"],
+.admin-user-management input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Default Icon Styling */
+.fas.fa-user-circle {
+    color: #bbb;
+}
+
+/* Action Links */
+.admin-user-management .action-btn {
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Edit Button Style */
+.admin-user-management .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-user-management .edit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Delete Button Style */
+.admin-user-management .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.admin-user-management .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Hover effect on action buttons */
+.admin-user-management .action-btn:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .admin-user-management table {
+        width: 100%;
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .admin-user-management form {
+        width: 90%;
+    }
+
+    /* Adjust table cell padding and input widths for mobile */
+    .admin-user-management table td, .admin-user-management table th {
+        padding: 8px;
+    }
+
+    .admin-user-management input[type="text"],
+    .admin-user-management input[type="email"],
+    .admin-user-management input[type="date"],
+    .admin-user-management input[type="password"] {
+        width: 100%;
+    }
+}
+
+/* Dropdown Styling */
+.admin-user-management select {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff; /* Match the input field color */
+    color: #000000; /* Text color */
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+
+
+
+

@@ -1,0 +1,259 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('../Images/marvalwall.jpg') no-repeat center center/cover;
+    background-size: cover;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Register Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 50px 0;
+}
+
+/* Register Box */
+.register-box {
+    background: rgba(26, 26, 26, 0.9); /* Dark theme */
+    padding: 40px 30px;
+    width: 700px; /* Wider form */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    color: #ff5733;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #ff5733;
+    background: #444;
+}
+
+/* Password Visibility Toggle */
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+    color: #ff5733;
+}
+
+/* Terms & Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms label {
+    color: #ccc;
+    font-size: 1em;
+}
+
+.terms a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    color: #d14320;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff5733;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background: #d14320;
+    transform: scale(1.05);
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.login-link a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #d14320;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .register-box {
+        width: 90%; /* Ensures the form doesn't stretch too much */
+        padding: 35px 25px; /* Adjust padding */
+    }
+
+    .form-grid {
+        display: block; /* Stacks the input fields vertically on smaller screens */
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Makes columns take full width */
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 2.2em; /* Adjust font size for heading */
+    }
+
+    .subtitle {
+        font-size: 1em; /* Adjust subtitle font size */
+    }
+
+    .input-group input {
+        font-size: 1em; /* Adjust input size */
+    }
+}
+
+@media (max-width: 768px) {
+    .register-box {
+        width: 85%; /* Further adjusts form width for smaller screens */
+        padding: 30px 20px; /* Reduces padding */
+    }
+
+    .form-grid {
+        display: block; /* Stacks fields vertically */
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .register-btn {
+        font-size: 1.1em; /* Adjust button font size */
+    }
+
+    h1 {
+        font-size: 2em; /* Further adjust heading */
+    }
+
+    .subtitle {
+        font-size: 0.95em; /* Adjust subtitle size */
+    }
+}
+
+@media (max-width: 480px) {
+    .register-box {
+        width: 90%; /* Ensures the form looks good on very small screens */
+        padding: 25px 15px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.7em; /* Smaller font size for mobile */
+    }
+
+    .subtitle {
+        font-size: 0.9em; /* Adjust subtitle size */
+    }
+
+    .input-group input {
+        font-size: 0.95em; /* Adjust input size */
+    }
+
+    .register-btn {
+        font-size: 1em; /* Adjust button size */
+    }
+
+    .terms label {
+        font-size: 0.9em; /* Adjust terms label font size */
+    }
+}
+
+/* Form Grid for Two Columns */
+.form-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+}

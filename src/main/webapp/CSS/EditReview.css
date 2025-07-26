@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    background-color: #121212; /* Dark background for the whole page for a modern look */
+    color: #f0f0f0; /* Light text for good contrast */
+    font-family: 'Segoe UI', sans-serif; /* Clean, readable font */
+}
+
+/* Edit Review Container */
+.edit-review-container {
+    max-width: 700px; /* Keep the form at a readable width */
+    margin: 50px auto; /* Center the container vertically and horizontally */
+    padding: 20px; /* Space inside the container */
+    background-color: #1f1f1f; /* Slightly lighter dark background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    position: relative; /* Allows stacking context if needed */
+    z-index: 1; /* Keeps it above other lower z-index elements */
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center; /* Center the heading */
+    color: #ff5733; /* Bright orange to draw attention */
+    font-size: 28px; /* Reduced from default for balance */
+    margin-bottom: 20px; /* Space below the heading */
+    border-bottom: 2px solid #ff5733; /* Add a line below the heading */
+    padding-bottom: 8px; /* Space between text and bottom border */
+}
+
+/* Form Layout */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between each form field */
+}
+
+/* Label Styling */
+label {
+    font-size: 1em; /* Standard readable size */
+    color: #f0f0f0; /* Light label text for contrast */
+    margin-bottom: 4px; /* Small space below label */
+}
+
+/* Input, Textarea, and Select Styling */
+input, textarea, select {
+    padding: 10px; /* Comfortable padding inside fields */
+    border: 2px solid #ff5733; /* Border to match theme color */
+    border-radius: 8px; /* Rounded corners for fields */
+    width: 100%; /* Full width fields */
+    font-size: 0.95em; /* Slightly smaller text inside inputs */
+    margin-bottom: 12px; /* Space between fields */
+    background-color: #262626; /* Dark input background */
+    color: #f0f0f0; /* Light input text */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+    box-sizing: border-box; /* Prevents padding from expanding width */
+}
+
+/* Textarea Specific Styling */
+textarea {
+    resize: vertical; /* Allow only vertical resizing */
+    height: 150px; /* Set initial height for textarea */
+}
+
+/* Focus States */
+input:focus, textarea:focus, select:focus {
+    border-color: #ff5733; /* Highlight border when active */
+    outline: none; /* Remove default browser outline */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px; /* Consistent padding inside button */
+    background-color: #ff5733; /* Primary action color */
+    color: white; /* Text color for readability */
+    border: none; /* No border for clean look */
+    border-radius: 8px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1em; /* Standard size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #d14320; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button Active State */
+button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Error Message Styling */
+/* Note: "c:if" is not a CSS selector – this may need to be changed to a class or ID in your JSP */
+c:if {
+    color: red; /* Red color for error text */
+    text-align: center; /* Center the message */
+    font-weight: bold; /* Make the message stand out */
+}
+
+/* Input Hover Effect */
+input:hover, textarea:hover, select:hover {
+    border-color: #ff5733; /* Keep consistent color on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .edit-review-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Adjust heading size for readability */
+    }
+
+    input, textarea, select {
+        font-size: 0.9em; /* Slightly smaller text for mobile */
+    }
+
+    button {
+        font-size: 1em; /* Maintain button text size */
+    }
+}

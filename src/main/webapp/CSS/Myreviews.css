@@ -1,0 +1,78 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.myreviews-container {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1f1f1f;
+     border-radius: 12px;
+}
+
+.myreviews-title {
+    text-align: center;
+    color: #ff5733;
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 10px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.review-table th,
+.review-table td {
+    padding: 12px 14px;
+    text-align: left;
+    max-width: 180px;
+    word-wrap: break-word;
+    word-break: break-word;
+    vertical-align: top;
+    text-align: center;
+}
+
+.review-table th {
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.review-table td {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+.review-table tr:nth-child(even) td {
+    background-color: #2b2b2b;
+}
+
+.no-reviews {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    font-style: italic;
+}
+/* remove button  */
+.remove-btn {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}

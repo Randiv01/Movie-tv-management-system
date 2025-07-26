@@ -1,0 +1,268 @@
+/* Universal Styles - Remove box-sizing from here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #ff5733;
+}
+
+/* Header Container */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+}
+
+/* ✅ Logo Styling - Word-based with Icon */
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo a.text-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; /* Add cursor pointer here */
+}
+
+.logo a.text-logo i {
+    font-size: 1.5em;
+    color: #ff5733;
+}
+
+.logo .logo-text {
+    letter-spacing: 1px;
+}
+
+.logo .highlight {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.logo a.text-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Styling */
+nav {
+    flex: 2 1 auto;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul.nav-links li {
+    margin: 0;
+}
+
+nav ul.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Add cursor pointer here */
+}
+
+nav ul.nav-links a:hover,
+nav ul.nav-links a.active {
+    background-color: #ff5733;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* User Authentication Section */
+.auth-section {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* User Info Styling */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.user-info .welcome-message {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* Profile Icon */
+.user-info .profile-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Add cursor pointer here */
+}
+
+.user-info .profile-icon {
+    font-size: 35px;
+    color: #ff5733;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #ff5733;
+}
+
+.user-info .profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Logout Form */
+.logout-form {
+    display: flex;
+    align-items: center;
+}
+
+/* Logout Button */
+.auth-section .btn-logout {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5733;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Add cursor pointer here */
+    outline: none;
+}
+
+.auth-section .btn-logout:hover {
+    background-color: #d14320;
+    transform: scale(1.05);
+}
+
+/* Login/Register Button */
+.btn-login-register {
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Add cursor pointer here */
+}
+
+.btn-login-register:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+    .logo a.text-logo {
+        font-size: 1.7em;
+    }
+
+    nav ul.nav-links {
+        gap: 20px;
+    }
+
+    .auth-section {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    nav ul.nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .auth-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .user-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-logout,
+    .btn-login-register {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo a.text-logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a.text-logo {
+        font-size: 1.4em;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul.nav-links a {
+        font-size: 1em;
+    }
+
+    .auth-section .btn-logout,
+    .btn-login-register {
+        font-size: 0.95em;
+        padding: 10px 18px;
+    }
+
+    .user-info .welcome-message {
+        font-size: 1em;
+    }
+}
+
+/* Footer Specific Styling - Apply box-sizing here */
+footer * {
+    box-sizing: border-box;
+}
